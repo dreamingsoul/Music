@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Barriecito&family=Cabin+Sketch:wght@400;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Delius&family=Fredericka+the+Great&family=Homemade+Apple&family=Macondo&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Schoolbell&family=Sue+Ellen+Francisco&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pompiere&family=Schoolbell&family=Sue+Ellen+Francisco&display=swap" rel="stylesheet">
+ <script src="https://kit.fontawesome.com/c42bd705fb.js" crossorigin="anonymous"></script>
+ <script src="script.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Give+You+Glory&family=Moon+Dance&family=Walter+Turncoat&display=swap" rel="stylesheet">
+    <title>Music Album Page for DS</title>
+    <style>
+        body {
+            
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .column {
+            flex-basis: calc(33.33% - 20px);
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h2{
+            font-family: monospace;
+            letter-spacing: 2px;
+            font-size: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            width: 100%;
+        }
+        .header h1 {
+            color: #fff;
+            font-family: "Cabin Sketch", sans-serif;
+            letter-spacing: 2.5px;
+            font-weight: 100;
+            font-size: 40px;
+            animation: glow2 5s linear infinite; /* Adjust animation duration */
+    transform: scale(1.10); 
+    color:mediumpurple;
+        }
+        .album {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .album img {
+            max-width: 100%;
+            max-height: 330px; /* Adjust the maximum height as needed */
+            border-radius: 8px;
+        }
+        .album h2 {
+            margin-top: 10px;
+            font-size: 15px;
+            color: #fff;
+        }
+        .album p {
+            margin-top: 5px;
+            font-size: 10px;
+            font-family: monospace;
+            letter-spacing: 1.5px;
+            color: #ccc;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            bottom: 0;
+             font-family: monospace;
+        }
+        .social-icons {
+            margin-top: 10px;
+        }
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+             transition: background-color 0.3s, transform 0.3s;
+        }
+        .social-icons a:hover{
+             animation: glow 0.03s linear infinite; /* Adjust animation duration */
+    transform: scale(1.10); 
+    text-decoration:line-through;
+    color:#F5B041   ;
+        }
+        @keyframes glow {
+        0% { text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 5px #F5B041; }
+        50% { text-shadow: 0 0 2px #F5B041, 0 0 4px #fff, 0 0 8px #fff; }
+        100% { text-shadow: 0 0 1px #F5B041, 0 0 2px #fff, 0 0 5px #F5B041; }
+    }
+
+    /* Glowing Effect */
+    .glow {
+        animation: glow 2s linear infinite; /* Adjust animation duration */
+    }
+
+    @keyframes glow2 {
+        0% { text-shadow: 0 0 30px #000, 0 0 6px #000, 0 0 30px  #2B294F; }
+        50% { text-shadow: 0 0 40px  #2B294F, 0 0 60px #000, 0 0 40px #fff; }
+        100% { text-shadow: 0 0 30px  #2B294F, 0 0 90px #000, 0 0 30px  #2B294F; }
+    }
+
+    /* Glowing Effect */
+    .glow2 {
+        animation: glow 2s linear infinite; /* Adjust animation duration */
+    }
+        
+        
+        @media only screen and (max-width: 768px) {
+            
+            
+         .header h1 {
+            color: #fff;
+            font-family: "Cabin Sketch", sans-serif;
+            letter-spacing: 2.5px;
+            font-weight: 100;
+            font-size: 25px;
+            animation: glow2 5s linear infinite; /* Adjust animation duration */
+    transform: scale(1.10); 
+    color:mediumpurple;
+        }    
+            
+             .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+             transition: background-color 0.3s, transform 0.3s;
+
+        }
+            
+         .album h2 {
+            margin-top: 10px;
+            font-size: 7px;
+            color: #fff;
+        }   
+            
+         .footer {
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            bottom: 0;
+             font-family: monospace;
+             font-size: 8px;
+        }   
+            
+            
+            
+            
+            
+        }   
+        
+        
+        
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Dreaming SouL</h1>
+             <div class="social-buttons">
+            <div class="social-icons">
+            
+    <a href="https://dreamingsoul.github.io/uk"><i class="fa-solid fa-globe"></i></a>
+    <a href="https://open.spotify.com/artist/3bJdp86yrrF60a2qDZcX6H?si=R59BN2AQSSO_biPxbLJaKA"><i class="fab fa-spotify"></i></a>
+    <a href="https://dreamingsoul.bandcamp.com"><i class="fa-brands fa-bandcamp"></i></a>
+    <a href="https://www.instagram.com/amandaswetaaa/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        </div>
+        
+        
+        <div class="column">
+            <div class="album">
+                <a href="https://fanlink.to/somewhere-quiet"><img src="images/somewhere%20quiet.jpg" alt="Album 1 Cover"></a>
+                <h2>somewhere quiet</h2>
+            </div>
+            
+            <div class="album">
+                <a href="https://fanlink.to/strangesteps"><img src="images/Strange%20steps%20-%20Made%20with%20Poster.jpg" alt="Album 3 Cover"></a>
+                <h2>strange steps</h2>
+            </div>
+            
+        </div>
+        <div class="column">
+            <div class="album">
+                <a href="https://fanlink.to/suburbsalbum"><img src="images/Suburbs%20-%20Made%20with%20PosterMyWall.jpg" alt="Album 2 Cover"></a>
+                <h2>suburbs</h2>
+
+            </div>
+            
+            <div class="album">
+                <a href="https://fanlink.to/ambientwinterbeats"><img src="images/awb.jpg" alt="Album 5 Cover"></a>
+                <h2>ambient winter beats</h2>
+            </div>
+            
+
+        </div>
+        <div class="column">
+             <div class="album">
+                <a href="https://fanlink.to/kasetto"> <img src="images/ea8b186a-2d72-4751-8716-60446418.png" alt="Album 4 Cover"></a>
+                <h2>kasetto</h2>
+            </div>
+            
+            <div class="album">
+                <a href="https://dreamingsoul.fanlink.to/mellowsundown"> <img src="images/Mellow%20sundown%20-%20Made%20with%20Poste.jpg" alt="Album 6 Cover"></a>
+                <h2>mellow sundown</h2>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Dreaming SouL. All rights reserved.</p>
+    </div>
+</body>
+</html>
